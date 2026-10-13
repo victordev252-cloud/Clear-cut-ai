@@ -19,3 +19,12 @@ AI background remover that runs entirely in the browser. Ships as a **web app** 
 npm install
 npm run serve
 # open http://localhost:3000
+# 1. Fur workflow-ga
+nano .github/workflows/main.yml
+
+# 2. Ku beddel file-ka kore
+
+# 3. Save, commit, push
+git add .github/workflows/main.yml
+git commit -m "Fix: replace setup-android with sdkmanager"
+git push
