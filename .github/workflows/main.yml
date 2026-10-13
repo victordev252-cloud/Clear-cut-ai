@@ -28,14 +28,11 @@ jobs:
           java-version: '17'
 
       - name: Accept Android SDK licenses
-        run: |
-          yes | sdkmanager --licenses || true
+        run: yes | sdkmanager --licenses || true
         continue-on-error: true
 
       - name: Install required Android SDK packages
-        run: |
-          sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0" "cmdline-tools;latest"
-        continue-on-error: false
+        run: sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0" "cmdline-tools;latest"
 
       - name: Install dependencies
         run: npm install
