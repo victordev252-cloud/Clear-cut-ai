@@ -1,0 +1,14 @@
+{
+  "appId": "ai.clearcut.app",
+  "appName": "ClearCut AI",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#F7F8FA"
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
