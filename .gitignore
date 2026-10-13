@@ -1,0 +1,14 @@
+node_modules/
+android/
+ios/
+.DS_Store
+*.log
+.gradle/
+local.properties
+.idea/
+*.keystore
+!debug.keystore
+/dist
+/build
+.env
+.env.local
