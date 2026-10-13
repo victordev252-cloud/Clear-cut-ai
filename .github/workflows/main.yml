@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          # cache: 'npm'  ← CACHE LA SAAray si looga fogaado lock file error
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -61,18 +61,3 @@ jobs:
           path: android/app/build/outputs/apk/debug/*.apk
           retention-days: 30
           if-no-files-found: error
-
-      - name: Upload Release APK (unsigned)
-        run: |
-          cd android
-          ./gradlew assembleRelease --no-daemon
-        continue-on-error: true
-
-      - name: Upload Release APK
-        uses: actions/upload-artifact@v4
-        if: success()
-        with:
-          name: clearcut-ai-release-apk
-          path: android/app/build/outputs/apk/release/*.apk
-          retention-days: 30
-          if-no-files-found: ignore
