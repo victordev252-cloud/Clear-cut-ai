@@ -1,0 +1,28 @@
+{
+  "appId": "ai.clearcut.app",
+  "appName": "ClearCut AI",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  },
+  "server": {
+    "androidScheme": "https",
+    "allowNavigation": [
+      "cdn.jsdelivr.net",
+      "huggingface.co",
+      "*.huggingface.co",
+      "*.hf.co",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "images.pexels.com"
+    ]
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
