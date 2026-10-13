@@ -3,13 +3,16 @@
   "appName": "ClearCut AI",
   "webDir": "www",
   "bundledWebRuntime": false,
+  "loggingBehavior": "none",
   "android": {
     "allowMixedContent": true,
     "captureInput": true,
-    "webContentsDebuggingEnabled": false
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#F7F8FA"
   },
   "server": {
     "androidScheme": "https",
+    "cleartext": false,
     "allowNavigation": [
       "cdn.jsdelivr.net",
       "huggingface.co",
@@ -22,7 +25,11 @@
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 0,
+      "launchAutoHide": true,
+      "backgroundColor": "#F7F8FA",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false
     }
   }
 }
